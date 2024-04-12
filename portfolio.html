@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-content">
+                <img src="profile_pic.jpg" alt="Profile Picture">
+                <h2>About Me</h2>
+                <p> Recent MSc graduate with expertise in Python,Django, SQL,HTML, CSS, and JavaScript, seeking a challenging role to apply advanced technical skills in a dynamic environment. Eager to contribute to impactful projects, leveraging academic achievements and fostering continuous skill development in a collaborative setting.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" onclick="toggleDescription(this)">
+                    <h3>Food Delivery Websitr</h3>
+                    <div class="project-details">
+                        <p>Developed an online food delivery website facilitating easy and bulk food orders from diverse restaurants. The platform allows users to simultaneously order from multiple restaurants and provides offline navigation for convenient access to selected eateries.
+                            </p>
+                        <a class="github-link" href="https://github.com/AshishPanda7777/Food_delivery_webpage" target="_blank">GitHub Link</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" onclick="toggleDescription(this)">
+                    <h3>Prototype Bank Application(Only Backend)</h3>
+                    <div class="project-details">
+                        <p>Developed Python program for banking system simulation, emphasizing OOP principles.,Implemented secure features: withdrawals, deposits, balance checks, and PIN management.</p>
+                        <a class="github-link" href="https://github.com/AshishPanda7777/Prototype-bank-application" target="_blank">GitHub Link</a>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me:</p>
+            <ul>
+                <li>Email: pandaashish910@gmail.com</li>
+                <li>Phone: +91 6386352801</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/ashish-panda-591090264/">Your LinkedIn Profile</a></li>
+                <li>GitHub: <a href="https://github.com/AshishPanda7777">Your GitHub Profile</a></li>
+                <!-- Add more contact information as needed -->
+            </ul>
+            <p>Or use the form below to send me a message:</p>
+            <div id="contact-form">
+                <form id="contactForm" onsubmit="return validateForm()">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" required></textarea><br>
+                    <button type="submit">Send Message</button>
+                    <div id="statusMessage"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Name</p>
+        </div>
+    </footer>
+
+    <script src="portfolio.js"></script>
+</body>
+
+</html>
